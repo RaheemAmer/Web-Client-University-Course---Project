@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title> Future </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/style2.css">
+
+</head>
+
+<body>
+    <div id="wrapper">
+        <form method="POST" action="index.html" onsubmit="return Validate()" class="login-form" name="vform">
+            <h1>Register</h1>
+            <div class="txtb" id="username_div">
+                <span data-placeholder="Username"></span>
+                <br>
+                <input type="text" name="username">
+                <div id="name_error"></div>
+            </div>
+            <div class="txtb" id="email_div">
+                <span data-placeholder="Email"></span>
+                <br>
+                <input type="email" name="email">
+                <div id="email_error"></div>
+            </div>
+            <div class="txtb" id="password_div">
+                <span data-placeholder="Password"></span>
+                <br>
+                <input type="password" name="password" class="textInput">
+            </div>
+            <div class="txtb" id="pass_confirm_div">
+                <span data-placeholder="Password confirm"></span>
+                <br>
+                <input type="password" name="password_confirm" class="textInput">
+                <div id="password_error"></div>
+            </div>
+            <div>
+                <input type="submit" name="register" value="Sign up" class="logbtn">
+            </div>
+        </form>
+    </div>
+    <script type="text/javascript">
+        $(".txtb input").on("focus", function() {
+            $(this).addClass("focus");
+        });
+
+        $(".txtb input").on("blur", function() {
+            if$(this).val() == "";
+            $(this).removeClass("focus");
+        });
+    </script>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
